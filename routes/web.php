@@ -20,7 +20,6 @@ Route::get('/', function () {
     return view('home');
 });
 */
-Route::get('home',function(){
-    return view('home.index');
-});
+Route::get('home', [\App\Http\Controllers\HomeController::class,'index']);
+
 
